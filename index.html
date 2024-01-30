@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" type="text/css" href="assets/calc_style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <div class="w3-bar w3-light-grey w3-border w3-large">
+      <a href="#" class="w3-bar-item w3-button w3-green"
+        ><i class="fa fa-home"></i
+      ></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+      <a href="about.html" class="w3-bar-item w3-button"
+        ><i class="fa fa-envelope"></i
+      ></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+      <a href="#" class="w3-bar-item w3-button"
+        ><i class="fa fa-sign-in"></i
+      ></a>
+    </div>
+    <div id="calculator">
+      <p id="last_operation_history"></p>
+      <p id="box" class="box">0</p>
+      <table id="table">
+        <tr>
+          <td><button onclick="backspace_remove()">CE</button></td>
+          <td><button onclick="button_clear()">C</button></td>
+          <td>
+            <button id="backspace_btn" onclick="backspace_remove()"></button>
+          </td>
+          <td>
+            <button
+              id="divOp"
+              value="/"
+              class="operator"
+              onclick="button_number('/')"
+            >
+              ÷
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="button_number(7)">7</button></td>
+          <td><button onclick="button_number(8)">8</button></td>
+          <td><button onclick="button_number(9)">9</button></td>
+          <td>
+            <button
+              id="multiOp"
+              value="*"
+              class="operator"
+              onclick="button_number('*')"
+            >
+              ×
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="button_number(4)">4</button></td>
+          <td><button onclick="button_number(5)">5</button></td>
+          <td><button onclick="button_number(6)">6</button></td>
+          <td>
+            <button
+              id="subOp"
+              value="-"
+              class="operator"
+              onclick="button_number('-')"
+            >
+              -
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="button_number(1)">1</button></td>
+          <td><button onclick="button_number(2)">2</button></td>
+          <td><button onclick="button_number(3)">3</button></td>
+          <td>
+            <button
+              id="plusOp"
+              value="+"
+              class="operator"
+              onclick="button_number('+')"
+            >
+              +
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="button_number('00')">00</button></td>
+          <td><button onclick="button_number(0)">0</button></td>
+          <td>
+            <button id="dot" value="." onclick="button_number('.')">.</button>
+          </td>
+          <td colspan="3">
+            <button
+              value="="
+              class="operator"
+              id="equal_sign"
+              onclick="button_number('=')"
+            >
+              =
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
