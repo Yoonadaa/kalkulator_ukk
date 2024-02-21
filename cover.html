@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* Styling for the front screen */
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+    }
+
+    .front-screen {
+        text-align: center;
+    }
+
+    .front-screen h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: white;
+        
+    }
+
+    .front-screen h2 {
+        font-size: 17px; /* Adjust the font size as needed */
+        margin-bottom: 10px;
+        color: #F0F3FF;
+        font-family: monospace;
+    }
+
+    .front-screen button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #FB88B4;
+        color: white; /* Change the text color to white */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Additional style for the GIF */
+    .front-screen img {
+        max-width: 50%; /* Make sure the image doesn't exceed its container */
+        margin-bottom: 10px;
+        border-radius: 10px; /* Add border-radius for rounded corners */
+    }
+
+    @keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.front-screen h1,
+.front-screen h2 {
+  overflow: hidden; /* Hide overflowing content */
+  border-right: 2px solid white; /* Add a border that looks like a typing cursor */
+  white-space: nowrap; /* Prevent text from wrapping */
+  margin: 0 auto; /* Center the text */
+  letter-spacing: 2px; /* Adjust letter spacing */
+  animation: typing 3s steps(50, end) forwards; /* Adjust the duration and steps */
+}
+</style>
+</head>
+<body>
+<div class="front-screen">
+    <img src="assets/dong-dongpyo.gif" alt="Welcome GIF">
+    <h1>Selamat Datang Di kalkulator TAKUKABA</h1>
+    <h2>solusi perhitungan cepat tanpa berfikir lama</h2>
+    <br>
+    <br>
+    <button onclick="window.location.href='kalkulator.html'">MULAI</button>
+</div>
+</body>
+</html>

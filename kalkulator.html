@@ -9,35 +9,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
   </head>
   <body>
-    <!-- Navigasi -->
-    <div class="w3-bar w3-light-grey w3-border w3-large">
-      <a href="#" class="w3-bar-item w3-button w3-green"
-        ><i class="fa fa-home"></i
-      ></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
-      <a href="about.html" class="w3-bar-item w3-button"
-        ><i class="fa fa-envelope"></i
-      ></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
-      <a href="#" class="w3-bar-item w3-button"
-        ><i class="fa fa-sign-in"></i
-      ></a>
-    </div>
+   
     <div id="calculator">
       <p id="last_operation_history"></p>
-      <p id="box" class="box">0</p>
+      <p id="box" class="box"></p>
       <table id="table">
         <tr>
-          <td><button onclick="backspace_remove()">CE</button></td>
+        
           <td><button onclick="button_clear()">C</button></td>
+            <td><button onclick="backspace_remove()">CE</button></td>
           <td>
             <button id="backspace_btn" onclick="backspace_remove()"></button>
           </td>

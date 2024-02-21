@@ -31,14 +31,15 @@ h1 {
   text-align: right;
   display: flex;
   justify-content: flex-end;
-  font-size: 2.8vh;
-  height: 3vh;
+  font-size: 2.9vh;
+  height: 2vh;
   line-height: 0vh;
   padding: 1em;
   border: 2px solid #756ab6;
   color: white;
   border-radius: 15px;
   background-color: black;
+  align-items: center;
 }
 
 #last_operation_history {
