@@ -4,26 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator</title>
+    <!-- Menghubungkan stylesheet untuk tata letak kalkulator -->
     <link rel="stylesheet" type="text/css" href="assets/calc_style.css" />
+    <!-- Menghubungkan font eksternal dari Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-
   </head>
   <body>
    
+    <!-- Kontainer utama kalkulator -->
     <div id="calculator">
+      <!-- Area tampilan riwayat operasi terakhir -->
       <p id="last_operation_history"></p>
+      <!-- Area tampilan operasi saat ini -->
       <p id="box" class="box"></p>
+      <!-- Tombol-tombol kalkulator -->
       <table id="table">
         <tr>
-        
+          <!-- Tombol untuk menghapus semua input -->
           <td><button onclick="button_clear()">C</button></td>
-            <td><button onclick="backspace_remove()">CE</button></td>
-          <td>
-            <button id="backspace_btn" onclick="backspace_remove()"></button>
-          </td>
+          <!-- Tombol untuk menghapus satu digit terakhir -->
+          <td><button onclick="backspace_remove()">CE</button></td>
+          <!-- Tombol untuk menghapus satu digit terakhir -->
+          <td><button id="backspace_btn" onclick="backspace_remove()"></button></td>
+          <!-- Tombol untuk operasi pembagian -->
           <td>
             <button
               id="divOp"
@@ -36,9 +42,11 @@
           </td>
         </tr>
         <tr>
+          <!-- Tombol angka 7-9 -->
           <td><button onclick="button_number(7)">7</button></td>
           <td><button onclick="button_number(8)">8</button></td>
           <td><button onclick="button_number(9)">9</button></td>
+          <!-- Tombol untuk operasi perkalian -->
           <td>
             <button
               id="multiOp"
@@ -51,9 +59,11 @@
           </td>
         </tr>
         <tr>
+          <!-- Tombol angka 4-6 -->
           <td><button onclick="button_number(4)">4</button></td>
           <td><button onclick="button_number(5)">5</button></td>
           <td><button onclick="button_number(6)">6</button></td>
+          <!-- Tombol untuk operasi pengurangan -->
           <td>
             <button
               id="subOp"
@@ -66,9 +76,11 @@
           </td>
         </tr>
         <tr>
+          <!-- Tombol angka 1-3 -->
           <td><button onclick="button_number(1)">1</button></td>
           <td><button onclick="button_number(2)">2</button></td>
           <td><button onclick="button_number(3)">3</button></td>
+          <!-- Tombol untuk operasi penambahan -->
           <td>
             <button
               id="plusOp"
@@ -81,11 +93,13 @@
           </td>
         </tr>
         <tr>
+          <!-- Tombol angka 00, 0, dan titik desimal -->
           <td><button onclick="button_number('00')">00</button></td>
           <td><button onclick="button_number(0)">0</button></td>
           <td>
             <button id="dot" value="." onclick="button_number('.')">.</button>
           </td>
+          <!-- Tombol sama dengan untuk mengevaluasi hasil -->
           <td colspan="3">
             <button
               value="="
@@ -100,6 +114,7 @@
       </table>
     </div>
 
+    <!-- Berkas skrip yang berisi fungsi JavaScript -->
     <script src="script.js"></script>
   </body>
 </html>
