@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-    /* Styling for the front screen */
     body {
         font-family: Arial, sans-serif;
         display: flex;
@@ -23,11 +22,10 @@
         font-size: 24px;
         margin-bottom: 10px;
         color: white;
-        
     }
 
     .front-screen h2 {
-        font-size: 17px; /* Adjust the font size as needed */
+        font-size: 17px; /* Sesuaikan ukuran font jika diperlukan */
         margin-bottom: 10px;
         color: #F0F3FF;
         font-family: monospace;
@@ -37,45 +35,45 @@
         padding: 10px 20px;
         font-size: 16px;
         background-color: #FB88B4;
-        color: white; /* Change the text color to white */
+        color: white; /* Ubah warna teks menjadi putih */
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
 
-    /* Additional style for the GIF */
+    /* Tambahan gaya untuk GIF */
     .front-screen img {
-        max-width: 50%; /* Make sure the image doesn't exceed its container */
+        max-width: 50%; /* Pastikan gambar tidak melebihi kontainer */
         margin-bottom: 10px;
-        border-radius: 10px; /* Add border-radius for rounded corners */
+        border-radius: 10px; /* Tambahkan border-radius untuk sudut melengkung */
     }
 
     @keyframes typing {
-  from {
-    width: 0;
-  }
+      from {
+        width: 0;
+      }
 
-  to {
-    width: 100%;
-  }
-}
+      to {
+        width: 100%;
+      }
+    }
 
-.front-screen h1,
-.front-screen h2 {
-  overflow: hidden; /* Hide overflowing content */
-  border-right: 2px solid white; /* Add a border that looks like a typing cursor */
-  white-space: nowrap; /* Prevent text from wrapping */
-  margin: 0 auto; /* Center the text */
-  letter-spacing: 2px; /* Adjust letter spacing */
-  animation: typing 3s steps(50, end) forwards; /* Adjust the duration and steps */
-}
+    .front-screen h1,
+    .front-screen h2 {
+      overflow: hidden; /* Sembunyikan konten yang meluap */
+      border-right: 2px solid white; /* Tambahkan batas yang terlihat seperti kursor ketik */
+      white-space: nowrap; /* Cegah teks melingkar */
+      margin: 0 auto; /* Pusatkan teks */
+      letter-spacing: 2px; /* Sesuaikan spasi antar huruf */
+      animation: typing 3s steps(50, end) forwards; /* Sesuaikan durasi dan langkah-langkah animasi */
+    }
 </style>
 </head>
 <body>
 <div class="front-screen">
-    <img src="assets/dong-dongpyo.gif" alt="Welcome GIF">
-    <h1>Selamat Datang Di kalkulator TAKUKABA</h1>
-    <h2>solusi perhitungan cepat tanpa berfikir lama</h2>
+    <img src="assets/dong-dongpyo.gif" alt="Selamat Datang GIF">
+    <h1>Selamat Datang Di Kalkulator TAKUKABA</h1>
+    <h2>Solusi perhitungan cepat tanpa berfikir lama</h2>
     <br>
     <br>
     <button onclick="window.location.href='kalkulator.html'">MULAI</button>
